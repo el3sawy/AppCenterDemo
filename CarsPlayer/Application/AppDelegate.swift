@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        AppCenter.start(withAppSecret: "da8084a9-c60c-4b85-b026-af0169900c3b", services:[
+          Analytics.self,
+          Crashes.self
+        ])
         setupRootViewController()
         return true
     }
