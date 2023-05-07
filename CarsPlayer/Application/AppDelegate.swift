@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           Crashes.self
         ])
         setupRootViewController()
+        // Add new comment 
         return true
     }
     
